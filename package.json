@@ -1,0 +1,46 @@
+{
+  "name": "lan-transfer",
+  "version": "1.0.0",
+  "main": "main.js",
+  "productName": "LAN Transfer",
+  "description": "局域网文件/文本互传",
+  "private": true,
+  "scripts": {
+    "start": "electron-forge start",
+    "build": "yarn build:webrtc",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "make-icon": "electron-icon-builder --input=./assets/icon.png --output=./assets/ --flatten"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tangshuang/lan-transfer.git"
+  },
+  "keywords": [],
+  "author": "tangshuang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tangshuang/lan-transfer/issues"
+  },
+  "homepage": "https://github.com/tangshuang/lan-transfer",
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.1"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.4.0",
+    "@electron-forge/maker-deb": "^7.4.0",
+    "@electron-forge/maker-rpm": "^7.4.0",
+    "@electron-forge/maker-squirrel": "^7.4.0",
+    "@electron-forge/maker-zip": "^7.4.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.4.0",
+    "@electron-forge/plugin-fuses": "^7.4.0",
+    "@electron/fuses": "^1.8.0",
+    "electron": "^30.2.0",
+    "electron-icon-builder": "^2.0.1",
+    "mkdirp": "^3.0.1",
+    "rimraf": "^6.0.1"
+  }
+}
