@@ -1,6 +1,5 @@
 const { app, BrowserWindow, Menu } = require('electron');
 const path = require('path');
-require('./packages/webrtc/build/server.js');
 
 // 避免第一次打开时出现updating窗口
 if (require('electron-squirrel-startup')) {
