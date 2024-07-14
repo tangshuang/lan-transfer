@@ -7,7 +7,6 @@
   "private": true,
   "scripts": {
     "start": "electron-forge start",
-    "build": "yarn build:webrtc",
     "package": "electron-forge package",
     "make": "electron-forge make",
     "make-icon": "electron-icon-builder --input=./assets/icon.png --output=./assets/ --flatten"
@@ -23,9 +22,6 @@
     "url": "https://github.com/tangshuang/lan-transfer/issues"
   },
   "homepage": "https://github.com/tangshuang/lan-transfer",
-  "workspaces": [
-    "packages/*"
-  ],
   "dependencies": {
     "electron-squirrel-startup": "^1.0.1"
   },
